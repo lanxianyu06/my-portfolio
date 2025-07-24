@@ -1,72 +1,140 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio ของฉัน</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
     <header>
-        <nav>
+        <div class="container">
             <h1>ธนาวุฒิ ศิริมงคล Dev Portfolio</h1>
-            <ul>
-                <li><a href="#home">หน้าแรก</a></li>
-                <li><a href="#about">เกี่ยวกับฉัน</a></li>
-                <li><a href="#projects">โปรเจกต์</a></li>
-                <li><a href="#contact">ติดต่อ</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#home">หน้าแรก</a></li>
+                    <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                    <li><a href="#skills">ทักษะ</a></li>
+                    <li><a href="#projects">โปรเจกต์</a></li>
+                    <li><a href="#contact">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
     <main>
         <section id="home" class="hero">
-            <h2>สวัสดีครับ ผมธนาวุฒิ ศิริมงคล</h2>
-            <p>Full-Stack Developer ผู้หลงใหลในการสร้างสรรค์และใช้ประโยชน์จาก AI</p>
-            <a href="#projects" class="button">ดูโปรเจกต์ของฉัน</a>
+            <div class="container">
+                <h2>สวัสดีครับ ผมชื่อ ธนาวุฒิ ศิริมงคล</h2>
+                <p></p>full-stack developer
+                ที่มีความหลงใหลในการสร้างสรรค์เว็บไซต์และแอปพลิเคชันที่ใช้งานง่ายและมีประสิทธิภาพ</p>
+                <a href="#projects" class="btn">ดูโปรเจกต์ของฉัน
+            </div>
         </section>
 
         <section id="about" class="about-me">
-            <h2>เกี่ยวกับฉัน</h2>
-            <p>ผมมีความสนใจอย่างแรงกล้าในโลกของเทคโนโลยีและการพัฒนาซอฟต์แวร์ ชอบแก้ปัญหาและสร้างสรรค์สิ่งใหม่ๆ ตั้งใจจะเป็น Full-Stack Developer ที่แข็งแกร่ง และนำ AI มาประยุกต์ใช้ในการทำงาน</p>
-            <h3>ทักษะที่กำลังพัฒนา:</h3>
-            <ul>
-                <li>**Frontend:** HTML, CSS, JavaScript, React (กำลังเรียนรู้)</li>
-                <li>**Backend:** Python, Flask/Django (กำลังเรียนรู้)</li>
-                <li>**Database:** SQL (กำลังเรียนรู้)</li>
-                <li>**Tools:** Git, GitHub, VS Code</li>
-                <li>**AI Integration:** กำลังสำรวจการใช้ AI ช่วยในการพัฒนาโค้ด</li>
-            </ul>
-        </section>
-
-        <section id="projects" class="projects">
-            <h2>โปรเจกต์ของฉัน</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>1. เว็บไซต์ Portfolio ส่วนตัว</h3>
-                    <p>เว็บไซต์ที่คุณกำลังดูอยู่นี้ สร้างขึ้นเพื่อแนะนำตัวและแสดงทักษะการพัฒนาเว็บเบื้องต้น</p>
-                    <p><strong>ทักษะที่ใช้:</strong> HTML, CSS, JavaScript</p>
-                    <a href="https://github.com/lanxianyu06/my-portfolio.git" target="_blank" class="button">ดูโค้ดบน GitHub</a>
-                    </div>
-
+            <div class="container">
+                <h2>เกี่ยวกับฉัน</h2>
+                <div class="about-content">
+                    <p>
+                        ผมมีความใจอย่างแรงกล้าในโลกของเทคโนโลยี
+                        และการพัฒนาซอฟต์แวร์โดยเฉพาะอย่างยิ่งในด้านการเป็น<strong>"ผู้สร้าง"</strong>ที่สามารถนำไอเดียมาทำให้เป็นจริงได้
+                    </p>
+                    <p>
+                        ปัจจุบันกำลังศึกษาและพัฒนาตัวเองอย่างต่เนื่องในฐานะ full-stack developer
+                        โดยมุ่งเน้นไปที่การพัฒนาเว็บไซต์และแอปพลิเคชันที่มีประสิทธิภาพและใช้งานง่าย พร้อมทั้งสำรวจการนำ
+                        <strong>AI</strong> มาปรับใช้ในงานพัฒนาเพื่อเพิ่มประสิทธิภาพและความสามารถในการทำงาน
+                    </p>
                 </div>
+            </div>
         </section>
-
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>ทักษะของฉัน</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React (กำลังเรียนรู้) </span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python (กำลังเรียนรู้) </span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>Git & GitHub</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Integration (กำลังสำรวจ)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>โปรเจกต์ของฉัน</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>เว็บไซต์ Portfolio ส่วนตัว</h3>
+                        <p>เว็บไซต์ที่คุณกำลังดูอยู๋ตอนนี้ สร้างขึ้นเพื่อแนะนำตัวและแสดงทักษะการพัฒนาเว็บเบืองต้น</p>
+                        <p><strong>ทักษะที่ใช้:</strong>HTML, CSS, Java Script</p>
+                        <a href="https://github.com/lanxianyu06/my-portfolio" target="_blank"
+                            class="button project-button">ดูโค้ดบน GitHub</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>โปรเจกต์อื่น ๆ</h3>
+                        <p>กำลังพัฒนาโปรเจกต์ใหม่ ๆ อย่างต่อเนื่อง โปรดติดตาม!</p>
+                        <p><strong>ทักษะที่ใช้:</strong>กำลังพัฒนา</p>
+                        <a href="#" class="button project-button disabled">ยังไม่มีโปรเจกต์</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact" class="contact">
-            <h2>ติดต่อฉัน</h2>
-            <p>หากคุณมีโอกาสดีๆ หรือต้องการพูดคุยเกี่ยวกับเทคโนโลยี ติดต่อมาได้เลย!</p>
-            <p>อีเมล: <a href="tanawutsirimongkon@gmail.com">tanawutsirimongkon@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">linkedin.com/in/yourprofile/</a></p>
+            <div class="container">
+                <h2>ติดต่อฉัน</h2>
+                <p>หากคุณมีโอกาสดีๆ หรือต้องการพูดคุยเกี่ยวกับเทคโนโลยี ติดต่อมาได้เลย!</p>
+                <p>อีเมล: <a href="mailto:tanawutsirimongkon@gmail.com">tanawutsirimongkon@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/kaoru-sang-460754375/"
+                        target="_blank"></a>https://www.linkedin.com/in/kaoru-sang-460754375/</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/lanxianyu06" target="_blank"></a><i class="fab fsa-github"></i></a>
+                    <a href="https://www.facebook.com/Zhuchong.27?locale=th_TH " target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/l_lanxianyu/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 [ธนาวุฒิ ศิริมงคล]. All rights reserved.</p>
-        <p>ออกแบบและพัฒนาโดย [ธนาวุฒิ ศิริมงคล]</p>
-        <p>Powered by HTML, CSS, JavaScript</p>
+        <div class="container">
+            <p>&copy; 2025 ธนาวุฒิ ศิริมงคล. ALL rights reserved.</p>
+            <p>Powered by HTML, CSS, JavaScript</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

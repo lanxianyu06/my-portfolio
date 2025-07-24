@@ -1,193 +1,230 @@
-/* Import Google Fonts (Kanit for headings, Roboto for body) */
-/* อย่าลืมเพิ่ม <link> ใน index.html ด้วย */
 body {
-    font-family: 'Roboto', sans-serif; /* ฟอนต์สำหรับเนื้อหาทั่วไป */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f2f5; /* สีพื้นหลังอ่อนๆ */
-    color: #333;
-    -webkit-font-smoothing: antialiased; /* ทำให้ตัวอักษรเรียบเนียน */
-    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif; /* กำหนดฟอนต์หลักสำหรับเนื้อหาทั่วไป */
+    line-height: 1.6; /* กำหนดระยะห่างระหว่างบรรทัด */
+    margin: 0; /* ลบระยะขอบเริ่มต้นของเบราว์เซอร์ */
+    padding: 0; /* ลบระยะห่างภายในเริ่มต้นของเบราว์เซอร์ */
+    background-color: #f0f2f5; /* สีพื้นหลังของหน้าเว็บ (สีเทาอ่อน) */
+    color: #333; /* สีกำหนดสีตัวอักษรเริ่มต้น */
+    -webkit-font-smoothing: antialiased; /* ทำให้ตัวอักษรเรียบเนียนขึ้นสำหรับเบราว์เซอร์ WebKit (Chrome, Safari) */
+    -moz-osx-font-smoothing: grayscale; /* ทำให้ตัวอักษรเรียบเนียนขึ้นสำหรับเบราว์เซอร์ Firefox บน macOS */
 }
 
 h1, h2, h3 {
-    font-family: 'Kanit', sans-serif; /* ฟอนต์สำหรับหัวข้อ */
-    color: #2c3e50; /* สีเข้มสำหรับหัวข้อ */
-    margin-bottom: 0.8em;
+    font-family: 'Kanit', sans-serif; /* กำหนดฟอนต์สำหรับหัวข้อ h1, h2, h3 */
+    color: #2c3e50; /* สีกำหนดสีเข้มสำหรับหัวข้อ */
+    margin-bottom: 0.8em; /* ระยะห่างด้านล่างหัวข้อ */
 }
 
-/* Global Styles */
+/* Global Styles (สไตล์ที่ใช้ทั่วทั้งเว็บไซต์) */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin: 0 auto; /* จัดเนื้อหาให้อยู่ตรงกลางหน้าจอ */
+    padding: 0 20px; /* ระยะห่างภายในด้านซ้ายและขวา */
 }
 
 a {
-    color: #3498db; /* สีลิงก์ฟ้า */
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #3498db; /* กำหนดสีลิงก์เป็นสีฟ้า */
+    text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
+    transition: color 0.3s ease; /* เพิ่มแอนิเมชันเมื่อสีเปลี่ยน */
 }
 
 a:hover {
-    color: #2980b9;
+    color: #2980b9; /* สีลิงก์เมื่อเมาส์ชี้ */
 }
 
-/* Header */
+/* Header (ส่วนหัวของเว็บไซต์) */
 header {
-    background-color: #2c3e50; /* สีกรมท่าเข้ม */
-    color: #ecf0f1;
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #2c3e50; /* สีกำหนดพื้นหลังส่วนหัวเป็นสีกรมท่าเข้ม */
+    color: #ecf0f1; /* สีกำหนดสีตัวอักษรในส่วนหัวเป็นสีเทาอ่อน */
+    padding: 1.5rem 0; /* ระยะห่างภายในด้านบนและล่าง */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* เพิ่มเงาด้านล่างส่วนหัว */
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* ใช้ Flexbox สำหรับจัดเรียงองค์ประกอบใน Header */
+    justify-content: space-between; /* จัดให้ h1 และ nav อยู่คนละฝั่ง */
+    align-items: center; /* จัดให้องค์ประกอบอยู่กึ่งกลางแนวตั้ง */
 }
 
 header h1 {
-    margin: 0;
-    color: #ecf0f1;
-    font-size: 1.8rem;
-    font-weight: 600;
+    margin: 0; /* ลบระยะขอบเริ่มต้นของ h1 */
+    color: #ecf0f1; /* สีกำหนดสี h1 เป็นสีเทาอ่อน */
+    font-size: 1.8rem; /* ขนาดตัวอักษร h1 */
+    font-weight: 600; /* น้ำหนักตัวอักษร h1 */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* ลบจุดนำหน้าของรายการ */
+    padding: 0; /* ลบระยะห่างภายในเริ่มต้นของ ul */
+    margin: 0; /* ลบระยะขอบเริ่มต้นของ ul */
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 30px; /* ระยะห่างระหว่างเมนู */
+    display: inline; /* จัดให้รายการเมนูอยู่บรรทัดเดียวกัน */
+    margin-left: 30px; /* ระยะห่างด้านซ้ายระหว่างเมนู */
 }
 
 nav ul li a {
-    color: #ecf0f1;
-    font-weight: 400;
-    font-size: 1.1rem;
-    position: relative;
-    padding-bottom: 5px;
+    color: #ecf0f1; /* สีกำหนดสีลิงก์เมนู */
+    font-weight: 400; /* น้ำหนักตัวอักษรลิงก์ */
+    font-size: 1.1rem; /* ขนาดตัวอักษรลิงก์ */
+    position: relative; /* กำหนดให้เป็นตำแหน่งอ้างอิงสำหรับ pseudo-element */
+    padding-bottom: 5px; /* ระยะห่างด้านล่างลิงก์ */
 }
 
+/* สร้างเส้นใต้เมนูเมื่อเมาส์ชี้ */
 nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #3498db;
-    transition: width 0.3s ease;
-    -webkit-transition: width 0.3s ease;
+    content: ''; /* สร้างเนื้อหาว่างเปล่า */
+    position: absolute; /* กำหนดตำแหน่งแบบสัมบูรณ์ */
+    width: 0; /* กำหนดความกว้างเริ่มต้นเป็น 0 */
+    height: 2px; /* ความสูงของเส้น */
+    display: block; /* แสดงเป็นบล็อก */
+    margin-top: 5px; /* ระยะห่างด้านบน */
+    right: 0; /* จัดให้อยู่ทางขวา */
+    background: #3498db; /* สีของเส้น */
+    transition: width 0.3s ease; /* แอนิเมชันเมื่อความกว้างเปลี่ยน */
+    -webkit-transition: width 0.3s ease; /* สำหรับเบราว์เซอร์ WebKit */
 }
 
 nav ul li a:hover::after {
-    width: 100%;
-    left: 0;
-    background: #3498db;
+    width: 100%; /* เพิ่มความกว้างเป็น 100% เมื่อเมาส์ชี้ */
+    left: 0; /* จัดให้อยู่ทางซ้าย */
+    background: #3498db; /* สีของเส้น */
 }
 
-/* Hero Section */
+/* Hero Section (ส่วนต้อนรับ) */
 .hero {
-    background: linear-gradient(to right, #3498db, #2980b9); /* ไล่สีฟ้า */
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    animation: fadeIn 1s ease-in-out; /* แอนิเมชันตอนโหลด */
+    background: linear-gradient(to right, #3498db, #2980b9); /* กำหนดพื้นหลังเป็นไล่สีฟ้า */
+    color: #fff; /* สีกำหนดสีตัวอักษรเป็นสีขาว */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    padding: 100px 20px; /* ระยะห่างภายในด้านบนและล่าง */
+    border-radius: 10px; /* ทำให้มุมมน */
+    margin: 20px auto; /* ระยะขอบด้านบนและล่าง, จัดให้อยู่ตรงกลาง */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* เพิ่มเงา */
+    animation: fadeIn 1s ease-in-out; /* เพิ่มแอนิเมชัน fadeIn เมื่อโหลดหน้า */
 }
 
 .hero h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #fff;
-    font-weight: 600;
+    font-size: 3rem; /* ขนาดตัวอักษร h2 */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง h2 */
+    color: #fff; /* สีกำหนดสี h2 เป็นสีขาว */
+    font-weight: 600; /* น้ำหนักตัวอักษร h2 */
 }
 
 .hero p {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
+    font-size: 1.3rem; /* ขนาดตัวอักษร p */
+    margin-bottom: 30px; /* ระยะห่างด้านล่าง p */
+    opacity: 0.9; /* ความโปร่งใสเล็กน้อย */
 }
 
+/* Buttons (ปุ่มต่างๆ) */
 .button {
-    display: inline-block;
-    background-color: #e67e22; /* สีส้ม */
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 50px; /* ทำให้เป็นปุ่มกลมๆ */
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: inline-block; /* ทำให้ปุ่มเป็นบล็อกแต่จัดเรียงในบรรทัดเดียวกันได้ */
+    background-color: #e67e22; /* สีกำหนดพื้นหลังปุ่มเป็นสีส้ม */
+    color: #fff; /* สีกำหนดสีตัวอักษรปุ่มเป็นสีขาว */
+    padding: 12px 30px; /* ระยะห่างภายในปุ่ม */
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    border-radius: 50px; /* ทำให้ปุ่มมีมุมมนมาก (ดูเหมือนแคปซูล) */
+    font-size: 1.1rem; /* ขนาดตัวอักษรปุ่ม */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* แอนิเมชันเมื่อเมาส์ชี้ */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* เพิ่มเงาปุ่ม */
 }
 
 .button:hover {
-    background-color: #d35400; /* ส้มเข้มขึ้น */
-    transform: translateY(-3px); /* ยกขึ้นเล็กน้อย */
+    background-color: #d35400; /* สีปุ่มเมื่อเมาส์ชี้ (ส้มเข้มขึ้น) */
+    transform: translateY(-3px); /* ทำให้ปุ่มยกขึ้นเล็กน้อยเมื่อเมาส์ชี้ */
 }
 
-/* General Section Styling */
+/* General Section Styling (สไตล์ทั่วไปสำหรับทุก Section) */
 section {
-    background-color: #fff;
-    padding: 40px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background-color: #fff; /* สีพื้นหลังของแต่ละ Section เป็นสีขาว */
+    padding: 40px; /* ระยะห่างภายในของแต่ละ Section */
+    margin-bottom: 20px; /* ระยะห่างด้านล่างของแต่ละ Section */
+    border-radius: 10px; /* ทำให้มุมมน */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* เพิ่มเงา */
 }
 
 section h2 {
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
+    font-size: 2.2rem; /* ขนาดตัวอักษร h2 ใน Section */
+    text-align: center; /* จัดหัวข้อให้อยู่ตรงกลาง */
+    margin-bottom: 30px; /* ระยะห่างด้านล่างหัวข้อ */
+    position: relative; /* กำหนดให้เป็นตำแหน่งอ้างอิงสำหรับ pseudo-element */
 }
 
+/* สร้างเส้นใต้หัวข้อ h2 ใน Section */
 section h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #e67e22; /* เส้นใต้หัวข้อสีส้ม */
-    margin: 10px auto 0;
-    border-radius: 2px;
+    content: ''; /* สร้างเนื้อหาว่างเปล่า */
+    display: block; /* แสดงเป็นบล็อก */
+    width: 60px; /* ความกว้างของเส้น */
+    height: 3px; /* ความสูงของเส้น */
+    background: #e67e22; /* สีของเส้น (สีส้ม) */
+    margin: 10px auto 0; /* จัดให้อยู่ตรงกลางและมีระยะห่างด้านบน */
+    border-radius: 2px; /* ทำให้มุมมนเล็กน้อย */
 }
 
-/* About Me Section */
-.about-me ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px; /* ระยะห่างระหว่างลิสต์ */
-    justify-content: center;
+/* About Me Section (ส่วนเกี่ยวกับฉัน) */
+.about-content {
+    display: flex; /* ใช้ Flexbox สำหรับจัดเรียงเนื้อหาใน About Me */
+    align-items: center; /* จัดให้องค์ประกอบอยู่กึ่งกลางแนวตั้ง */
+    gap: 30px; /* ระยะห่างระหว่างรูปภาพกับข้อความ */
+    flex-wrap: wrap; /* ให้เนื้อหาขึ้นบรรทัดใหม่ได้เมื่อหน้าจอเล็ก */
+    justify-content: center; /* จัดให้อยู่ตรงกลางเมื่อหน้าจอเล็ก */
 }
 
-.about-me ul li {
+.profile-photo {
+    width: 250px; /* กำหนดความกว้างรูปภาพ */
+    height: 250px; /* กำหนดความสูงรูปภาพ */
+    border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
+    object-fit: cover; /* ครอปรูปภาพให้พอดีกับขนาด */
+    border: 5px solid #3498db; /* เพิ่มขอบสีฟ้า */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* เพิ่มเงา */
+}
+
+.about-content p {
+    flex: 1; /* ให้ข้อความขยายเต็มพื้นที่ที่เหลือ */
+    max-width: 600px; /* กำหนดความกว้างสูงสุดของข้อความ */
+    font-size: 1.1rem;
+}
+
+
+/* Skills Section (ส่วนทักษะ) */
+.skills-grid {
+    display: grid; /* ใช้ CSS Grid สำหรับจัดเรียงทักษะเป็นตาราง */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* ปรับจำนวนคอลัมน์ตามขนาดจอ */
+    gap: 20px; /* ระยะห่างระหว่างกล่องทักษะ */
+    justify-items: center; /* จัดไอเท็มให้อยู่ตรงกลางในแต่ละ Grid Cell */
+}
+
+.skill-item {
     background-color: #ecf0f1; /* สีพื้นหลังของแต่ละทักษะ */
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: 400;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px); /* ยกขึ้นเล็กน้อยเมื่อเมาส์ชี้ */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill-item i {
+    font-size: 3rem; /* ขนาดไอคอน */
+    color: #3498db; /* สีไอคอน */
+    margin-bottom: 10px;
+}
+
+.skill-item span {
+    display: block; /* ทำให้ข้อความอยู่บรรทัดใหม่ */
+    font-weight: 600;
     color: #2c3e50;
-    transition: background-color 0.3s ease;
 }
 
-.about-me ul li:hover {
-    background-color: #dbe4e6;
-}
-
-/* Projects Section */
+/* Projects Section (ส่วนโปรเจกต์) */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ปรับตามขนาดจอ */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ปรับจำนวนคอลัมน์ตามขนาดจอ */
     gap: 30px; /* ระยะห่างระหว่างโปรเจกต์ */
 }
 
@@ -197,9 +234,9 @@ section h2::after {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงเนื้อหาในกล่องโปรเจกต์ */
+    flex-direction: column; /* จัดเรียงในแนวตั้ง */
+    justify-content: space-between; /* จัดเนื้อหาให้กระจายเต็มพื้นที่ */
 }
 
 .project-item:hover {
@@ -218,18 +255,29 @@ section h2::after {
     margin-bottom: 15px;
 }
 
-.project-item .button {
+.project-item .project-button { /* ใช้ class project-button แทน button เพื่อแยกสไตล์ */
     align-self: flex-start; /* จัดปุ่มให้อยู่ซ้ายสุด */
-    margin-top: auto; /* ทำให้ปุ่มอยู่ล่างสุด */
+    margin-top: auto; /* ทำให้ปุ่มอยู่ล่างสุดของกล่องโปรเจกต์ */
     background-color: #3498db; /* ปุ่มโปรเจกต์เป็นสีฟ้า */
 }
 
-.project-item .button:hover {
+.project-item .project-button:hover {
     background-color: #2980b9;
 }
 
+.project-item .disabled {
+    background-color: #ccc; /* สีปุ่มสำหรับโปรเจกต์ที่ยังไม่พร้อม */
+    cursor: not-allowed; /* เปลี่ยนเคอร์เซอร์เป็นไม่อนุญาต */
+    opacity: 0.7;
+}
 
-/* Contact Section */
+.project-item .disabled:hover {
+    background-color: #ccc; /* ไม่เปลี่ยนสีเมื่อเมาส์ชี้ */
+    transform: none; /* ไม่มีแอนิเมชันยกขึ้น */
+}
+
+
+/* Contact Section (ส่วนติดต่อ) */
 .contact p {
     text-align: center;
     font-size: 1.1rem;
@@ -240,63 +288,92 @@ section h2::after {
     font-weight: 600;
 }
 
-/* Footer */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 2.5rem; /* ขนาดไอคอนโซเชียล */
+    margin: 0 15px;
+    color: #2c3e50; /* สีไอคอน */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db; /* สีไอคอนเมื่อเมาส์ชี้ */
+}
+
+/* Footer (ส่วนท้ายของเว็บไซต์) */
 footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #2c3e50; /* สีกำหนดพื้นหลังส่วนท้าย */
+    color: #ecf0f1; /* สีกำหนดสีตัวอักษรส่วนท้าย */
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 30px;
     font-size: 0.9rem;
 }
 
-/* Animations */
+/* Animations (แอนิเมชัน) */
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(20px);
+        opacity: 0; /* เริ่มต้นที่โปร่งใส */
+        transform: translateY(20px); /* เริ่มต้นที่ตำแหน่งต่ำกว่าปกติ */
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* จบที่ทึบแสง */
+        transform: translateY(0); /* จบที่ตำแหน่งปกติ */
     }
 }
 
 /* Responsive Design (ปรับแต่งสำหรับหน้าจอขนาดเล็ก) */
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
+        flex-direction: column; /* จัดเรียงองค์ประกอบใน Header เป็นแนวตั้ง */
         text-align: center;
     }
 
     nav ul li {
         margin: 0 10px;
-        display: block; /* แสดงเมนูเป็นบล็อก */
+        display: block; /* แสดงเมนูเป็นบล็อก (แต่ละเมนูอยู่คนละบรรทัด) */
         padding: 5px 0;
     }
 
+    .hero {
+        padding: 60px 20px; /* ลด Padding ใน Hero Section */
+    }
+
     .hero h2 {
-        font-size: 2.2rem;
+        font-size: 2.2rem; /* ลดขนาด h2 ใน Hero Section */
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1.1rem; /* ลดขนาด p ใน Hero Section */
     }
 
     section {
-        padding: 25px;
+        padding: 25px; /* ลด Padding ใน Section ทั่วไป */
     }
 
     section h2 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* ลดขนาด h2 ใน Section ทั่วไป */
+    }
+
+    .about-content {
+        flex-direction: column; /* จัดเรียงเนื้อหา About Me เป็นแนวตั้ง */
+        text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* ปรับขนาดคอลัมน์สำหรับทักษะ */
     }
 
     .project-grid {
-        grid-template-columns: 1fr; /* 1 คอลัมน์บนมือถือ */
+        grid-template-columns: 1fr; /* แสดงโปรเจกต์ 1 คอลัมน์บนมือถือ */
     }
-}
 
-/* Utility classes */
-.text-center {
-    text-align: center;
+    .social-links a {
+        font-size: 2rem; /* ลดขนาดไอคอนโซเชียล */
+        margin: 0 10px;
+    }
 }
